@@ -1,10 +1,10 @@
-# Edge Rewiring Goes Neural: Boosting Network Resilience via Policy Gradient
+# Learning to Boost Resilience of Complex Networks via Neural Edge Rewiring
 
 
 
-This repository is the official PyTorch implementation of "Edge Rewiring Goes Neural: Boosting Network Resilience via Policy Gradient".
+This repository is the official PyTorch implementation of "Learning to Boost Resilience of Complex Networks via Neural Edge Rewiring".
 
-[Shanchao Yang](https://yangysc.github.io/), Kaili Ma, [Baoxiang Wang](https://bxiangwang.github.io/), [Hongyuan Zha](https://sds.cuhk.edu.cn/en/teacher/65), [Edge Rewiring Goes Neural: Boosting Network Resilience via Policy Gradient](https://arxiv.org/abs/2110.09035)
+[Shanchao Yang](https://yangysc.github.io/), [Kaili Ma](https://openreview.net/profile?id=~MA_KAILI1), [Baoxiang Wang](https://bxiangwang.github.io/), [Tianshu Yu](https://mypage.cuhk.edu.cn/academics/yutianshu/), [Hongyuan Zha](https://sds.cuhk.edu.cn/en/teacher/65), [Edge Rewiring Goes Neural: Boosting Network Resilience via Policy Gradient](https://arxiv.org/abs/2110.09035)
 
 ![ResiNet policy_architecture](policy_architecture.png)
 ## Installation
