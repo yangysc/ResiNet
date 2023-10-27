@@ -4,7 +4,7 @@
 
 This repository is the official PyTorch implementation of "Learning to Boost Resilience of Complex Networks via Neural Edge Rewiring".
 
-[Shanchao Yang](https://yangysc.github.io/), [Kaili Ma](https://openreview.net/profile?id=~MA_KAILI1), [Baoxiang Wang](https://bxiangwang.github.io/), [Tianshu Yu](https://mypage.cuhk.edu.cn/academics/yutianshu/), [Hongyuan Zha](https://sds.cuhk.edu.cn/en/teacher/65), [Learning to Boost Resilience of Complex Networks via Neural Edge Rewiring](https://openreview.net/pdf?id=moZvOx5cxe)
+[Shanchao Yang](https://yangysc.github.io/), [Kaili Ma](https://openreview.net/profile?id=~MA_KAILI1), [Baoxiang Wang](https://bxiangwang.github.io/), [Tianshu Yu](https://mypage.cuhk.edu.cn/academics/yutianshu/), [Hongyuan Zha](https://sds.cuhk.edu.cn/en/teacher/65), [Learning to Boost Resilience of Complex Networks via Neural Edge Rewiring](https://openreview.net/pdf?id=moZvOx5cxe), Transactions on Machine Learning Research.
 
 ![ResiNet policy_architecture](policy_architecture.png)
 ## Installation
@@ -193,3 +193,18 @@ All trained models and tensorboard logs are saved in the folder `log/DDPPO/`.
   CUDA_VISIBLE_DEVICES=0,1 python evaluate_trained_agent_dppo.py --num-gpus=2 --tasks-per-gpu=1 --bs=400 --mini-bs=16 --gpus_per_instance=1 --ppo_alg=dcppo --attack_strategy=degree --second-obj-func=le --seed=0 --reward_scale=1 --test_num=-1 --cwd-path=./test  --alpha=0.5 --dataset=example_15 --filtration_order=-1  --robust-measure=ac --hidden_dim=64
   ```
   Remember to set the `restore_path` in `evaluate_trained_agent_dppo.py` (Line 26) to the trained model folder.
+
+
+## Citation
+If you find this work useful, please cite our paper:
+
+@article{
+yang2023learning,
+title={Learning to Boost Resilience of Complex Networks via Neural Edge Rewiring},
+author={Shanchao Yang and Kaili Ma and Baoxiang Wang and Tianshu Yu and Hongyuan Zha},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2023},
+url={https://openreview.net/forum?id=moZvOx5cxe}
+}
+
