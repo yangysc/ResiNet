@@ -117,7 +117,7 @@ if __name__ == "__main__":
     # parser.add_argument("--single-obj",  action='store_true')
     parser.add_argument("--add-penality", type=bool, default=False)
     # parser.add_argument("--penality", type=float, default=)
-    # parser.add_argument("--robust-measure", type=str, default='R', choices=['R', "sr", "ac"])
+    # parser.add_argument("--robust-measure", type=str, default='R', choices=['R', "sr"])
     # parser.add_argument("--single-obj", type=bool, default=True, help="True: only optimize robustness")
     parser.add_argument("--second-obj-func", type=str, default='ge', choices=['-1', 'ge', 'le'],help="'ge': global efficiency")
     parser.add_argument("--reward_scale", type=float, default=1)
