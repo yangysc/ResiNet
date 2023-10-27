@@ -79,7 +79,7 @@ if __name__ == "__main__":
     parser.add_argument("--attack_strategy", type=str, default='degree', choices=['-1', 'degree', 'betweenness'])
     parser.add_argument("--break_tie", type=str, default='inc_by_id', choices=['-1', 'inc_by_id', 'random', 'dec_by_id'])
 
-    parser.add_argument("--robust-measure", type=str, default='R', choices=['R', "sr", "ac"])
+    parser.add_argument("--robust-measure", type=str, default='R', choices=['R', "sr"])
     parser.add_argument("--sequentialMode", type=bool, default=True)
     parser.add_argument("--add-penality", type=bool, default=False)
 
