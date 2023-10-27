@@ -197,7 +197,7 @@ All trained models and tensorboard logs are saved in the folder `log/DDPPO/`.
 
 ## Citation
 If you find this work useful, please cite our paper:
-
+```
 @article{
 yang2023learning,
 title={Learning to Boost Resilience of Complex Networks via Neural Edge Rewiring},
@@ -207,4 +207,5 @@ issn={2835-8856},
 year={2023},
 url={https://openreview.net/forum?id=moZvOx5cxe}
 }
+```
 
