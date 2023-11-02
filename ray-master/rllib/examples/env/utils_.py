@@ -86,8 +86,8 @@ def objective_func(graph_input, alpha=0, scale=1, robust_measure='R', single_obj
         single_obj = False
     if robust_measure == 'R':  # robustness based on "Mitigation of Malicious Attacks on Networks"
         robustness = robustness_cal_robust(graph_input, sequentialMode, attack_strategy)
-    elif robust_measure == "sr":  # spectral_radius
-        robustness = np.real(np.max(nx.linalg.adjacency_spectrum(graph_input)))
+    elif robust_measure == "ac":  # algebraic_connectivity
+        robustness = nx.linalg.algebraic_connectivity(graph_input)
     else:
         robustness = 0
         print('robustness must be ["R", "sr"]')
