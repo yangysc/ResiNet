@@ -109,7 +109,7 @@ if __name__ == "__main__":
     parser.add_argument("--dual_clip_param", type=float, default=5, help='dual_clip_param')
 
     # different robustness measure
-    parser.add_argument("--robust-measure", type=str, default='R', choices=['-1', 'R', "sr", "ac"])
+    parser.add_argument("--robust-measure", type=str, default='R', choices=['-1', 'R', "ac"])
     parser.add_argument("--attack_strategy", type=str, default='degree', choices=['-1', 'degree', 'betweenness', 'null'])
     parser.add_argument("--break_tie", type=str, default='inc_by_id', choices=['-1', 'inc_by_id', 'random', 'dec_by_id'])
 
@@ -117,7 +117,6 @@ if __name__ == "__main__":
     # parser.add_argument("--single-obj",  action='store_true')
     parser.add_argument("--add-penality", type=bool, default=False)
     # parser.add_argument("--penality", type=float, default=)
-    # parser.add_argument("--robust-measure", type=str, default='R', choices=['R', "sr"])
     # parser.add_argument("--single-obj", type=bool, default=True, help="True: only optimize robustness")
     parser.add_argument("--second-obj-func", type=str, default='ge', choices=['-1', 'ge', 'le'],help="'ge': global efficiency")
     parser.add_argument("--reward_scale", type=float, default=1)
@@ -191,7 +190,7 @@ if __name__ == "__main__":
         args.break_tie = tune.grid_search(['inc_by_id', 'random', 'dec_by_id'])
 
     if args.robust_measure == '-1':
-        args.robust_measure = tune.grid_search(['R', "sr", "ac"])
+        args.robust_measure = tune.grid_search(['R', "ac"])
 
     if args.attack_strategy == '-1':
         args.attack_strategy = tune.grid_search(['degree', 'betweenness'])
