@@ -54,16 +54,16 @@ This repository is the official PyTorch implementation of "Learning to Boost Res
   ```
 
 - Install [ray](https://docs.ray.io/en/latest/rllib.html)
-    - Use the specific commit version of ray `8a066474d44110f6fddd16618351fe6317dd7e03`
+    - Use the specific commit version of ray `a2a1c46c83ba4eb924142503a82df7d2bd01dff0`
 
         For Linux:
 
       ```
-      pip install -U https://s3-us-west-2.amazonaws.com/ray-wheels/master/8a066474d44110f6fddd16618351fe6317dd7e03/ray-2.0.0.dev0-cp38-cp38-manylinux2014_x86_64.whl
+      pip install -U https://s3-us-west-2.amazonaws.com/ray-wheels/master/a2a1c46c83ba4eb924142503a82df7d2bd01dff0/ray-2.0.0.dev0-cp38-cp38-manylinux2014_x86_64.whl
       ```
       For Windows:
       ```
-      pip install -U https://s3-us-west-2.amazonaws.com/ray-wheels/master/8a066474d44110f6fddd16618351fe6317dd7e03/ray-2.0.0.dev0-cp38-cp38-win_amd64.whl
+      pip install -U https://s3-us-west-2.amazonaws.com/ray-wheels/master/a2a1c46c83ba4eb924142503a82df7d2bd01dff0/ray-2.0.0.dev0-cp38-cp38-win_amd64.whl
       ```
 
   - Download our repository, which includes the source codes of ray and ResiNet.
